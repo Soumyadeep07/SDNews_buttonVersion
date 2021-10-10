@@ -1,0 +1,136 @@
+{
+    "status": "ok",
+    "totalResults": 10,
+    "articles": [
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "BBC News",
+            "title": "Squid Game: Netflix to edit out key phone number from gory series",
+            "description": "A South Korean woman says she has been deluged by calls after her number appears in key scenes.",
+            "url": "http://www.bbc.co.uk/news/world-asia-58824544",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/D497/production/_120732445_-3.jpg",
+            "publishedAt": "2021-10-07T03:52:26.4694393Z",
+            "content": "Image caption, Squid Game looks set to become Netflix's most-watched show worldwide\r\nNetflix says it will edit out a phone number that appears in its hit series Squid Game after a woman said she was … [+1722 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "BBC News",
+            "title": "The cheap way to cool India's sweltering homes",
+            "description": "One charity is helping the country's poor stay cool with a simple and cheap solution.",
+            "url": "http://www.bbc.co.uk/news/world-asia-58820950",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/12F3C/production/_120882677_mediaitem120882675.jpg",
+            "publishedAt": "2021-10-07T03:52:21.8455901Z",
+            "content": "Heatwaves are becoming more common in India due to global warming. Theres nowhere to hide especially if you live in a crowded city like Ahmedabad. \r\nShakeela Bano struggles to get her grandson Mohamm… [+166 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "BBC News",
+            "title": "Texas abortion: Judge temporarily blocks enforcement of law",
+            "description": "A federal judge calls the Texas ban on abortions an \"offensive deprivation\" of constitutional rights.",
+            "url": "http://www.bbc.co.uk/news/world-us-canada-58824668",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/16EFC/production/_120884939_abortionprotestreuters.jpg",
+            "publishedAt": "2021-10-07T03:37:24.1800083Z",
+            "content": "Image caption, The new law has faced opposition both in the courts and on the streets\r\nA federal judge has temporarily blocked a controversial new law in Texas that effectively bans women from having… [+2438 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "BBC News",
+            "title": "Debt ceiling: Is the US about to overshoot its debt limit?",
+            "description": "There's a showdown in Washington over raising the limit on the amount the US government can borrow.",
+            "url": "http://www.bbc.co.uk/news/world-us-canada-58820071",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/202E/production/_120883280_gettyimages-1235726753.jpg",
+            "publishedAt": "2021-10-07T00:22:22.6156554Z",
+            "content": "Image source, Getty Images\r\nImage caption, US lawmakers are running out the clock in a standoff over how much money the government can borrow\r\nUS lawmakers are once again locked in a dangerous game o… [+6172 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "BBC News",
+            "title": "Prince Andrew to receive Epstein-Giuffre agreement",
+            "description": "His legal team believes the sealed document will end a case brought by his accuser, Virginia Giuffre.",
+            "url": "http://www.bbc.co.uk/news/uk-58823289",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/17438/production/_120688259_princeandrewwithvirginiaroberts.jpg",
+            "publishedAt": "2021-10-06T22:22:20.2614727Z",
+            "content": "Image source, Virginia Roberts\r\nImage caption, Virginia Giuffre, then Roberts, was pictured with Prince Andrew in London in 2001\r\nPrince Andrew has been granted access to a sealed document his legal … [+2257 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "BBC News",
+            "title": "Opioid crisis: US pharmacies face moment of truth as trial begins",
+            "description": "Major pharmacy chains are accused of fuelling the US opioid crisis and could face billions of dollars in damages if found liable.",
+            "url": "http://www.bbc.co.uk/news/business-58820598",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/23F1/production/_119110290_pills.jpg",
+            "publishedAt": "2021-10-06T19:37:25.0091241Z",
+            "content": "Image source, Getty Images\r\nSome of America's biggest pharmacy chains have gone on trial this week for the first time, accused of fuelling the country's opioids epidemic. \r\nWalgreens Boots Alliance, … [+4568 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "BBC News",
+            "title": "Search for cause in California beach oil spill",
+            "description": "The cleanup continues and the cause is still unknown after an oil spill in California.",
+            "url": "http://www.bbc.co.uk/news/world-us-canada-58823812",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/00F8/production/_120884200_p09xxscl.jpg",
+            "publishedAt": "2021-10-06T19:37:18.2920455Z",
+            "content": "Cleanups are ongoing after 126,000 gallons of oil spilled in California. The cause of the spill is still unknown.\r\nAn environmental watchdog suspects ships nearby may have dropped anchors that create… [+51 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "BBC News",
+            "title": "Historic go-ahead for malaria vaccine to protect African children",
+            "description": "After years of trials, the vaccine has shown potential to save tens of thousands of children's lives.",
+            "url": "http://www.bbc.co.uk/news/health-58810551",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/17C1C/production/_120880379_kenya_elian_who_2019.jpg",
+            "publishedAt": "2021-10-06T16:07:20.1278171Z",
+            "content": "By James GallagherHealth and science correspondent\r\nImage source, BRIAN ONGORO\r\nChildren across much of Africa are to be vaccinated against malaria in a historic moment in the fight against the deadl… [+5375 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "BBC News",
+            "title": "Abu Zubaydah: Top US court to hear test case on state secrecy",
+            "description": "Abu Zubaydah will be first Guantanamo prisoner to hear his case in the Supreme Court in over a decade.",
+            "url": "http://www.bbc.co.uk/news/world-us-canada-58809109",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/3B7B/production/_120872251_tv046621940.jpg",
+            "publishedAt": "2021-10-06T14:37:27.0292639Z",
+            "content": "By Bernd Debusmann Jr &amp; Tara McKelvey &amp; Anthony ZurcherBBC News\r\nImage caption, Abu Zubaydah has been held at Guantanamo Bay without charge for over a decade\r\nAccording to the US government, … [+5992 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "BBC News",
+            "title": "Joyce Echaquan: Racism played role in death, coroner finds",
+            "description": "The woman in Canada filmed herself being insulted by hospital staff shortly before her death.",
+            "url": "http://www.bbc.co.uk/news/world-us-canada-58819203",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/E9F9/production/_120879895_joyce.jpg",
+            "publishedAt": "2021-10-06T14:22:28.246602Z",
+            "content": "Image source, Getty Images\r\nImage caption, Ms Echaquan's death incited national outrage\r\nThe death of an indigenous woman, Joyce Echaquan, last year was preventable and an \"undeniable\" case of racism… [+2021 chars]"
+        }
+    ]
+}
