@@ -20,11 +20,11 @@ export class App extends Component {
           <Switch>
             <Route exact path="/">
               <Navbar active="home"/>
-              <NewsDiv country="in" category="all" key="all" />
+              <NewsDiv country="in" category="" key="general" />
             </Route>
-            <Route exact path="/national">
-              <Navbar active="national"/>
-              <NewsDiv country="in" category="national" key="national" />
+            <Route exact path="/general">
+              <Navbar active="general"/>
+              <NewsDiv country="in" category="general" key="General" />
             </Route>
             <Route exact path="/business">
               <Navbar active="business"/>
@@ -34,9 +34,9 @@ export class App extends Component {
               <Navbar active="entertainment"/>
               <NewsDiv country="in" category="entertainment" key="entertainment" />
             </Route>
-            <Route exact path="/world">
-              <Navbar active="world"/>
-              <NewsDiv country="in" category="world" key="world" />
+            <Route exact path="/health">
+              <Navbar active="health"/>
+              <NewsDiv country="in" category="health" key="health" />
             </Route>
             <Route exact path="/science">
               <Navbar active="science"/>
@@ -50,28 +50,6 @@ export class App extends Component {
               <Navbar active="technology"/>
               <NewsDiv country="in" category="technology" key="technology" />
             </Route>
-
-            <Route exact path="/politics">
-              <Navbar active="politics"/>
-              <NewsDiv country="in" category="politics" key="politics" />
-            </Route>
-            <Route exact path="/startup">
-              <Navbar active="startup"/>
-              <NewsDiv country="in" category="startup" key="startup" />
-            </Route>
-            <Route exact path="/automobile">
-              <Navbar active="automobile"/>
-              <NewsDiv country="in" category="automobile" key="automobile" />
-            </Route>
-            <Route exact path="/miscellaneous">
-              <Navbar active="miscellaneous"/>
-              <NewsDiv country="in" category="miscellaneous" key="miscellaneous" />
-            </Route>
-            <Route exact path="/hatke">
-              <Navbar active="hatke"/>
-              <NewsDiv country="in" category="hatke" key="hatke" />
-            </Route> 
-
             <Route exact path="/aboutus">
               <Navbar active="aboutus"/>
               <About key="about" category="aboutUs"/>
