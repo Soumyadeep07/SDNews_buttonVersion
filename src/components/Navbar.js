@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import newsLogo from '../logo/news-logo.jpg';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import './DropdownStyle.css';
 
 export default class Navbar extends Component {
     static propTypes = {
@@ -35,26 +36,60 @@ export default class Navbar extends Component {
                                     <Link className={`nav-link ${this.props.active === "home" ? "active font-weight-bold" : ""}`} aria-current="page" to="/">Home</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className={`nav-link ${this.props.active === "general" ? "active font-weight-bold" : ""}`} to="/general">General</Link>
+                                    <Link className={`nav-link ${this.props.active === "national" ? "active font-weight-bold" : ""}`} to="/national">National</Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link className={`nav-link ${this.props.active === "business" ? "active font-weight-bold" : ""}`} to="/business">Business</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className={`nav-link ${this.props.active === "entertainment" ? "active font-weight-bold" : ""}`} to="/entertainment">Entertainment</Link>
+                                    <Link className={`nav-link ${this.props.active === "sports" ? "active font-weight-bold" : ""}`} to="/sports">Sports</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className={`nav-link ${this.props.active === "health" ? "active font-weight-bold" : ""}`} to="/health">Health</Link>
+                                    <Link className={`nav-link ${this.props.active === "world" ? "active font-weight-bold" : ""}`} to="/world">World</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className={`nav-link ${this.props.active === "science" ? "active font-weight-bold" : ""}`} to="/science">Science</Link>
+                                    <Link className={`nav-link ${this.props.active === "politics" ? "active font-weight-bold" : ""}`} to="/politics">Politics</Link>
                                 </li>
-                                <li className="nav-item">
+
+                                {/* <li className="nav-item">
                                     <Link className={`nav-link ${this.props.active === "sports" ? "active font-weight-bold" : ""}`} to="/sports">Sports</Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link className={`nav-link ${this.props.active === "technology" ? "active font-weight-bold" : ""}`} to="/technology">Technology</Link>
-                                </li>
+                                </li> */}
+
+                                <div className="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                                    <ul className="navbar-nav">
+                                        <li className="nav-item dropdown">
+                                            <Link id="navbarDarkDropdownMenuLink " to="/creative"
+                                            className={`nav-link dropdown-toggle dropdown ${(this.props.active==='technology' || this.props.active==='science' || this.props.active==='startup' || this.props.active==='automobile')?"active font-weight-bold":"" }`} role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Creative
+                                            </Link>
+                                            <ul className="dropdown-menu dropdown-menu-dark dropdown-content" aria-labelledby="navbarDarkDropdownMenuLink">
+                                                <li><Link className="dropdown-item" to="/technology">Technology</Link></li>
+                                                <li><Link className="dropdown-item" to="/science">Science</Link></li>
+                                                <li><Link className="dropdown-item" to="/startup">Startup</Link></li>
+                                                <li><Link className="dropdown-item" to="/automobile">Automobile</Link></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div className="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                                    <ul className="navbar-nav">
+                                        <li className="nav-item dropdown">
+                                            <Link className={`nav-link dropdown-toggle dropdown ${(this.props.active==='miscellaneous' || this.props.active==='entertainment' || this.props.active==='hatke')?"active font-weight-bold":"" }`} to="/relax" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Relax
+                                            </Link>
+                                            <ul className="dropdown-menu dropdown-menu-dark dropdown-content" aria-labelledby="navbarDarkDropdownMenuLink">
+                                                <li><Link className="dropdown-item" to="/entertainment">Entertainment</Link></li>
+                                                <li><Link className="dropdown-item" to="/miscellaneous">Miscellaneous</Link></li>
+                                                <li><Link className="dropdown-item" to="/hatke">Hatke</Link></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+
                                 <li className="nav-item">
                                     <Link className={`nav-link ${this.props.active === "aboutus" ? "active font-weight-bold" : ""}`} to="/aboutus">About Us</Link>
                                 </li>
@@ -72,7 +107,7 @@ export default class Navbar extends Component {
 
 
                 {/* This code is for Download App modal */}
-                <div className="modal fade text-center" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style={{ zIndex:"99999" }}>
+                <div className="modal fade text-center" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style={{ zIndex: "99999" }}>
                     <div className="modal-dialog">
                         <div className="modal-content" style={{}}>
                             <div className="modal-header bg-info text-white" >
@@ -81,8 +116,8 @@ export default class Navbar extends Component {
                                 <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div className="modal-body">
-                                <img src="https://adderra.com/wp-content/uploads/2020/09/under-construction.png" alt="UNDER CONSTRUCTION"/> <br />
-                                App download krke space badhana jaroori hai kya !! <br/> Website me kya kami hai bhai :(
+                                <img src="https://adderra.com/wp-content/uploads/2020/09/under-construction.png" alt="UNDER CONSTRUCTION" /> <br />
+                                App download krke space badhana jaroori hai kya !! <br /> Website me kya kami hai bhai :(
                             </div>
                             <div className="modal-footer">
                                 <button type="button" className="btn btn-info fw-bold text-white" data-bs-dismiss="modal">Close</button>
