@@ -11,10 +11,10 @@ export class NewsDiv extends Component {
         super(props);
         this.state = {
             articles: [],
-            loading: true,
-            page: 1
+            // loading: true,
+            // page: 1
         }
-        if (this.props.category !== '' && this.props.category !== '/')
+        if (this.props.category !== '' && this.props.category !== '/' && this.props.category !== 'all')
             document.title = `SDNews - ${this.capitalizeFirstLetter(this.props.category)}`
         else
         document.title = 'SDNews'
@@ -22,7 +22,7 @@ export class NewsDiv extends Component {
 
     static defaultProps = {
         country: "in",
-        category: "general"
+        category: "all"
     }
 
     static propTypes = {
@@ -32,12 +32,12 @@ export class NewsDiv extends Component {
 
     async componentDidMount() {
         this.setState({ loading: true })
-        let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=969ceadf639e4d53a116b72b9799bafd&pageSize=6`;
-        let data = await fetch(url);
-        let parsedData = await data.json();
+        let url = `https://inshortsapi.vercel.app/news?category=${this.props.category}`;
+        let dataFetched = await fetch(url);
+        let parsedData = await dataFetched.json();
         this.setState({
-            articles: parsedData.articles,
-            totalResults: parsedData.totalResults,
+            articles: parsedData.data,
+            // totalResults: parsedData.totalResults,
             // loading: false 
         })
 
@@ -48,43 +48,7 @@ export class NewsDiv extends Component {
         }, 4000)
     }
 
-    handleNext = async () => {
-        this.setState({ loading: true })
-        let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=969ceadf639e4d53a116b72b9799bafd&page=${this.state.page + 1}&pageSize=6`;
-        let data = await fetch(url);
-        let parsedData = await data.json();
-        // this.setState({ articles: parsedData.articles })
-        this.setState({
-            page: this.state.page + 1,
-            articles: parsedData.articles,
-            // loading: false
-        })
-
-        setTimeout(() => {
-            this.setState({
-                loading: false
-            })
-        }, 3500)
-    }
-
-    handlePrevious = async () => {
-        this.setState({ loading: true })
-        let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=969ceadf639e4d53a116b72b9799bafd&page=${this.state.page - 1}&pageSize=6`;
-        let data = await fetch(url);
-        let parsedData = await data.json();
-        // this.setState({ articles: parsedData.articles })
-        this.setState({
-            page: this.state.page - 1,
-            articles: parsedData.articles,
-            // loading: false
-        })
-
-        setTimeout(() => {
-            this.setState({
-                loading: false
-            })
-        }, 5000)
-    }
+    
 
     capitalizeFirstLetter = (string) => {
         return string.charAt(0).toUpperCase() + string.slice(1);
@@ -102,18 +66,12 @@ export class NewsDiv extends Component {
                         {/* Looping for each article */}
                         {this.state.loading === false && this.state.articles.map((element) => {
                             return (
-                                <div className="col-md-4 my-2" key={element.url}>
-                                    <NewsItem title={element.title.slice(0, 58) + "..."} description={element.description ? element.description.slice(0, 90) + " ..read more" : "Read more for detailed news.."} imageUrl={element.urlToImage} newsUrl={element.url} loading={this.state.loading} publishedAt={element.publishedAt} author={element.author} />
+                                <div className="col-md-4 my-2" key={element.imageUrl}>
+                                    <NewsItem title={element.title.slice(0, 58) + "..."} content={element.content ? element.content.slice(0, 90) + " ..read more" : "Read more for detailed news.."} imageUrl={element.imageUrl} readMoreUrl={element.readMoreUrl?element.readMoreUrl:element.url} loading={this.state.loading} date={element.date} time={element.time} author={element.author} />
                                 </div>
                             )
                         })}
                     </div>
-
-                    {this.state.loading === false && (<div className="d-flex justify-content-between">
-                        <button disabled={this.state.page <= 1} type="button" className="btn btn-success" onClick={this.handlePrevious} >&larr; Previous</button>
-                        <button type="button" disabled={this.state.page >= Math.ceil(this.state.totalResults / 6)} className="btn btn-success" onClick={this.handleNext} >Next &rarr;</button>
-                    </div>)
-                    }
                 </div>
             </div>
 
