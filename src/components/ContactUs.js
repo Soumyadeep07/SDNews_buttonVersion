@@ -36,7 +36,7 @@ export default function ContactUs(props) {
 
                     <div className="col-12 col-md-12 col-lg-4 col-xl-4" style={{ "float": "left", "marginBottom": "16px", "padding": "0 10px" }}>
                         <div className="card" style={{ "boxShadow": "0 4px 8px 0 rgba(0, 0, 0, 0.2)", "margin": "8px" }}>
-                            <img src="https://cdn.codechef.com/sites/default/files/uploads/pictures/5e448f31d182a43aacf8063b4beb0721.jpg" alt="Mike" style={{ "width": "100%" }} />
+                            <img src="https://cdn.codechef.com/sites/default/files/uploads/pictures/5e448f31d182a43aacf8063b4beb0721.jpg" alt="Soumyadeep" style={{ "width": "100%" }} />
                             <div className="container" style={{ "padding": "0 16px" }}>
                                 <h2>Soumyadeep</h2>
                                 <p className="title" style={{ "color": "grey" }}>Developer</p>
